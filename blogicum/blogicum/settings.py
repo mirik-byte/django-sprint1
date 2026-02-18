@@ -1,6 +1,5 @@
-"""Django settings for blogicum project."""
-
 from pathlib import Path
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -8,6 +7,7 @@ SECRET_KEY = (
     'django-insecure-^i7y-_n$@p6qhn%@)mzsmhxjgh88#'
     'tkyyagxechm^o)a8_%vxb'
 )
+
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -86,8 +86,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'ru-ru'
+TIME_ZONE = 'Europe/Moscow'
+
 USE_I18N = True
 USE_TZ = True
 
