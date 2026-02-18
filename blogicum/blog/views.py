@@ -52,8 +52,8 @@ def index(request):
     return render(request, 'blog/index.html', context)
 
 
-def post_detail(request, id):
-    post = posts_by_id.get(id)
+def post_detail(request, post_id):
+    post = posts_by_id.get(post_id)
     if post is None:
         raise Http404("Пост не найден")
     return render(request, 'blog/detail.html', {'post': post})
